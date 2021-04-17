@@ -1,0 +1,117 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Donation</title>
+    <link rel="stylesheet" href="static/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="static/styles/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    
+    <link rel="stylesheet" href="static/styles/index_style.css">
+
+</head>
+<body>
+
+    <!--   start loading screen -->
+    <div class="loading">
+        <div id="banner" class="w-50 text-center">
+            <div class="m-auto text-center">
+                <i  class="fas fa-heart text-center" id="loadcolor"></i>
+            </div>
+            <div class="text-center m-auto" >
+                <i  class="fas fa-heart text-white" ></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- start first site page -->
+
+    <section id="siteTour">
+
+        <div class="overlay">
+
+         
+                
+          <div class="container choose ">
+    
+              <div class="row chooseButton align-items-center justify-content-center">
+
+                  <div class="col-12 col-sm-12 col-md-4 p-5 d-flex justify-content-center align-items-center">
+
+                      <div id="animy1" class="w-100 p-3 m-auto text-center wow"><button data-cr-text="Click to login" class= 'btn rounded-pill'>DONATE</button></div>
+
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-4 p-5 d-flex justify-content-center align-items-center">
+
+                      <div id="animy2" class="w-100 p-3 m-auto text-center wow"><a href="/search_donor"><button data-cr-text="Click to search donors" class="btn rounded-pill">SEARCH DONORS</button></a></div>
+
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-4 p-5 d-flex justify-content-center align-items-center">
+
+                      <div id="animy3" class="w-100 p-3 m-auto text-center wow"><a href="/home"><button data-cr-text="Click to visit our sections." class="btn rounded-pill">TAKE A TOUR</button></a></div>
+
+                  </div>
+
+              </div> 
+
+          </div>
+
+        </div>
+
+    </section> 
+
+    <!---  Donation section -->
+
+      <section id="donation">
+
+        <div class="overlay  p-5" id="don">
+  
+           
+  
+        <div class="formBody rounded m-auto">
+          <div class="global-container">
+            <div class="card login-form">
+            <div class="card-body">
+              <h3 class="card-title text-center">Donor Login</h3>
+              <div class="card-text">
+                <!--
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+                <form action="\donor\20" method="POST">
+
+                  <!-- to error: add class "has-danger" -->
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control form-control-sm" name="email" aria-describedby="emailHelp">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control form-control-sm" name="password">
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                  
+                  <div class="sign-up">
+                    Don't have an account? <a href="donorRegistration">Register</a>
+                  </div>
+                
+                </form>
+              </div>
+            </div>
+          </div>
+          </div>
+  
+      
+           
+        </div>
+  
+      </section>
+
+    <script src="static/js/jquery-3.5.1.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>    
+    <script src="static/js/script.js"></script>
+</body>
+</html>
+
